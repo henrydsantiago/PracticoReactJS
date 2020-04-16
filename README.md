@@ -1,2 +1,8 @@
 # PracticoReactJS
-##Curso Práctico de React JS
+## Curso Práctico de React JS
+
+React
+webpack
+eslint
+babel
+
