@@ -21,7 +21,10 @@ const App = () => {
         {initalState.mylist.length > 0 &&        
             <Categories title="Mi Lista">
                 <Carousel>
-                    <CarouselItem/>
+                    {
+                        initalState.mylist.map( item => 
+                            <CarouselItem key={item.id}{...item} />)
+                    }
                 </Carousel> 
             </Categories>
         }
@@ -37,7 +40,10 @@ const App = () => {
 
         <Categories title="Películas de Acción">
             <Carousel>
-                <CarouselItem/>
+                {
+                    initalState.originals.map( item => 
+                        <CarouselItem key={item.id}{...item} />)
+                }
             </Carousel> 
         </Categories>
 
